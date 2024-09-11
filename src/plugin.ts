@@ -1,14 +1,23 @@
 penpot.ui.open("Penpot plugin starter template", `?theme=${penpot.getTheme()}`);
 
 penpot.ui.onMessage<string>((message) => {
-  if (message === "create-text") {
-    const text = penpot.createText("Hello world!");
+  if (message === "create-rectangle-with-text") {
+    const rectangle = penpot.createRectangle();
+    rectangle.resize(175, 30);
 
+    const text = penpot.createText("Hello QA team!");
     if (text) {
-      text.x = penpot.viewport.center.x;
-      text.y = penpot.viewport.center.y;
+      text.align = "center";
+      text.verticalAlign = "center";
+      text.resize(175, 30);
+      const group = penpot.group([rectangle, text]);
 
-      penpot.selection = [text];
+      if (group) {
+        group.x = penpot.viewport.center.x;
+        group.y = penpot.viewport.center.y;
+  
+        penpot.selection = [group];
+      }
     }
   }
 });

@@ -1,16 +1,16 @@
-# Penpot Plugin Starter Template
+# QA Team Sample Plugin
 
-This repository is designed to be your starting point for creating plugins for Penpot. Follow these instructions to set up your development environment and start building your own Penpot plugins.
+This repository includes a QA testing sample plugin.
 
-## Getting Started
+## URL to test the plugin
 
-[![Watch the video how to use starter template](https://penpot.github.io/penpot-plugin-starter-template/plugin-starter-template.png)](https://penpot.github.io/penpot-plugin-starter-template/plugin-starter-template.mp4)
+This plugin can be tested using the following url to install it in penpot: [url pending]
 
-### Use this template
+## Run the plugin on your local
 
-Click the "Use this template" button at the top of the GitHub repository page. That'll create a new repository in your account with all the template files.
+### Clone the repository
 
-Now that your repository was created you can clone it in your machine to start working with it:
+Clone the repository to start working with it:
 ```bash
 git clone <your-repository-url>
 ```
@@ -20,7 +20,7 @@ git clone <your-repository-url>
 After cloning the repository, navigate into the project directory and install the necessary dependencies by running:
 
 ```bash
-cd <your-project-name>
+cd penpotqa-plugins
 npm install
 ```
 
@@ -28,7 +28,7 @@ This command installs all the required packages listed in the `package.json` fil
 
 ### Configure the Plugin
 
-Next, you need to edit the plugin's configuration file:
+Next, if you need it, edit the plugin's configuration file:
 
 1. Open the `manifest.json` file located in the `/public` folder.
 2. Make any necessary changes to the configuration. Note that any modifications to this file require you to restart the development server for changes to take effect.
@@ -42,16 +42,6 @@ npm run dev
 ```
 
 Once the server is running, open your web browser and go to `http://localhost:4400` to view your plugin in action. Now it is ready to be loaded in Penpot with the url `http://localhost:4400/manifest.json`.
-
-## Development
-
-### Technologies Used
-
-This plugin template uses several key technologies:
-
-- **TypeScript**
-- **Vite**
-- **Web Components**
 
 ### Libraries Included
 

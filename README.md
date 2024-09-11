@@ -4,7 +4,7 @@ This repository includes a QA testing sample plugin.
 
 ## URL to test the plugin
 
-This plugin can be tested using the following url to install it in penpot: [url pending]
+This plugin can be tested using the following url to install it in penpot: `https://penpotqa-plugins.pages.dev/manifest.json`
 
 ## Run the plugin on your local
 
